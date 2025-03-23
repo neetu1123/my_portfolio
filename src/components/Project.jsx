@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Project() {
     const [activeFilter, setActiveFilter] = useState('all');
@@ -175,12 +176,12 @@ export default function Project() {
                 <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
                     I'm always looking for new opportunities and collaborations. Let's create something amazing together!
                 </p>
-                <a 
-                    href="/contact" 
+                <NavLink 
+                    to="/contact" 
                     className="inline-block px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                 >
                     Get in Touch
-                </a>
+                </NavLink>
             </div>
         </div>
     );
